@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Shop.Data.Models
 {
-    public class Order // Соло
+    public class Order
     {
         [BindNever]
         public int id { get; set; }
