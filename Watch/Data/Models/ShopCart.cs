@@ -31,13 +31,13 @@ namespace Shop.Data.Models
             return new ShopCart(context) { ShopCartId = shopCartId };
         }
 
-        public void AddToCart(Car car)
+        public void AddToCart(Watch watch)
         {
             appDBContent.ShopCartItem.Add(new ShopCartItem
             {
                 ShopCartId = ShopCartId,
-                car = car,
-                price = car.price
+                watch = watch,
+                price = watch.price
             });
 
             appDBContent.SaveChanges();
@@ -45,7 +45,7 @@ namespace Shop.Data.Models
 
         public List<ShopCartItem> getShopItems()
         {
-            return appDBContent.ShopCartItem.Where(c => c.ShopCartId == ShopCartId).Include(s => s.car).ToList();
+            return appDBContent.ShopCartItem.Where(c => c.ShopCartId == ShopCartId).Include(s => s.watch).ToList();
         }
 
 

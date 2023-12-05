@@ -5,17 +5,17 @@ using System.Linq;
 
 namespace Shop.Data.mocks
 {
-    public class MockCars : IAllCars
+    public class MockWatches : IAllWatches
     {
 
-        private readonly ICarsCategory _categoryCars = new MockCategory();
+        private readonly IWatchesCategory _categoryWatches = new MockCategory();
 
-        public IEnumerable<Car> Cars {
+        public IEnumerable<Watch> Watches {
             get
             {
-                return new List<Car>
+                return new List<Watch>
                 {
-                    new Car 
+                    new Watch 
                     {
                         name = "Tesla Model S", 
                         shortDesc = "Быстрый автомобиль", 
@@ -24,9 +24,9 @@ namespace Shop.Data.mocks
                         price = 45000, 
                         isFavourite= true, 
                         available = true, 
-                        Category = _categoryCars.AllCategories.First()
+                        Category = _categoryWatches.AllCategories.First()
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Ford Fiesta",
                         shortDesc = "Тихий и спокойный",
@@ -35,9 +35,9 @@ namespace Shop.Data.mocks
                         price = 11000,
                         isFavourite= false,
                         available = true,
-                        Category = _categoryCars.AllCategories.Last()
+                        Category = _categoryWatches.AllCategories.Last()
                     },
-                    new Car
+                    new Watch
                     {
                         name = "BMW M3",
                         shortDesc = "Дерзкий и стильный",
@@ -46,9 +46,9 @@ namespace Shop.Data.mocks
                         price = 65000,
                         isFavourite= true,
                         available = true,
-                        Category = _categoryCars.AllCategories.Last()
+                        Category = _categoryWatches.AllCategories.Last()
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Mercedes C class",
                         shortDesc = "Уютный и большой",
@@ -57,9 +57,9 @@ namespace Shop.Data.mocks
                         price = 40000,
                         isFavourite= false,
                         available = false,
-                        Category = _categoryCars.AllCategories.Last()
+                        Category = _categoryWatches.AllCategories.Last()
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Nissan Leaf",
                         shortDesc = "Бешумный и комфортный",
@@ -68,13 +68,13 @@ namespace Shop.Data.mocks
                         price = 14000,
                         isFavourite= true,
                         available = true,
-                        Category = _categoryCars.AllCategories.First()
+                        Category = _categoryWatches.AllCategories.First()
                     }
                 };
             }
            }
-        public IEnumerable<Car> getFavCars { get; set; }
-        public Car getObjectCar(int carId)
+        public IEnumerable<Watch> getFavWatches { get; set; }
+        public Watch getObjectWatch(int watchId)
         {
             throw new System.NotImplementedException();
         }

@@ -10,12 +10,12 @@ namespace Shop.Controllers
 {
     public class ShopCartController : Controller
     {
-        private IAllCars _carRep;
+        private IAllWatches _watchRep;
         private readonly ShopCart _shopCart;
 
-        public ShopCartController(IAllCars carRep, ShopCart shopCart)
+        public ShopCartController(IAllWatches watchRep, ShopCart shopCart)
         {
-            _carRep = carRep;
+            _watchRep = watchRep;
             _shopCart = shopCart;
         }
 
@@ -35,7 +35,7 @@ namespace Shop.Controllers
 
         public RedirectToActionResult addToCart(int id)
         {
-            var item = _carRep.Cars.FirstOrDefault(i => i.id == id);
+            var item = _watchRep.Watches.FirstOrDefault(i => i.id == id);
             if (item != null)
             {
                 _shopCart.AddToCart(item);

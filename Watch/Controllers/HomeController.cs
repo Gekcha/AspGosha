@@ -7,20 +7,20 @@ namespace Shop.Controllers
     public class HomeController : Controller
     {
 
-        private IAllCars _carRep;
+        private IAllWatches _watchRep;
 
-        public HomeController(IAllCars carRep)
+        public HomeController(IAllWatches watchRep)
         {
-            _carRep = carRep;
+            _watchRep = watchRep;
         }
 
         public ViewResult Index()
         {
-            var homeCars = new HomeViewModel
+            var homeWatches = new HomeViewModel
             {
-                favCars = _carRep.getFavCars
+                favWatches = _watchRep.getFavWatches
             };
-            return View(homeCars);
+            return View(homeWatches);
         }
     }
 }

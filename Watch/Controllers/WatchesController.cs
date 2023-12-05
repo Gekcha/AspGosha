@@ -8,52 +8,52 @@ using System.Linq;
 
 namespace Shop.Controllers
 {
-    public class CarsController : Controller
+    public class WatchesController : Controller
     {
 
-        private readonly IAllCars _allCars;
-        private readonly ICarsCategory _allCaterories;
+        private readonly IAllWatches _allWatches;
+        private readonly IWatchesCategory _allCaterories;
 
-        public CarsController(IAllCars iAllCars, ICarsCategory iCarsCat)
+        public WatchesController(IAllWatches iAllWatches, IWatchesCategory iWatchesCat)
         {
-            _allCars = iAllCars;
-            _allCaterories = iCarsCat;
+            _allWatches = iAllWatches;
+            _allCaterories = iWatchesCat;
         }
-        [Route("Cars/List")]
-        [Route("Cars/List/{category}")]
+        [Route("Watches/List")]
+        [Route("Watches/List/{category}")]
         public ViewResult List(string category)
         {
             string _category = category;
-            IEnumerable<Car> cars = null;
+            IEnumerable<Watch> watches = null;
             string currCategory = "";
 
             if(string.IsNullOrEmpty(_category))
             {
-                cars = _allCars.Cars.OrderBy(i => i.id);
+                watches = _allWatches.Watches.OrderBy(i => i.id);
             }
             else
             {
                 if(string.Equals("electro", category, StringComparison.OrdinalIgnoreCase))
                 {
-                    cars = _allCars.Cars.Where(i => i.Category.categoryName.Equals("Электромобили"));
+                    watches = _allWatches.Watches.Where(i => i.Category.categoryName.Equals("Электромобили"));
                     currCategory = "Электромобили";
                 }
                 else if (string.Equals("fuel", category, StringComparison.OrdinalIgnoreCase))
                 {
-                    cars = _allCars.Cars.Where(i => i.Category.categoryName.Equals("Классические автомобили"));
+                    watches = _allWatches.Watches.Where(i => i.Category.categoryName.Equals("Классические автомобили"));
                     currCategory = "Классические автомобили";
                 }
             }
 
-            var carObj = new CarsListViewModel
+            var watchObj = new WatchesListViewModel
             {
-                allCars = cars,
+                allWatches = watches,
                 currCategory = currCategory
             };
 
         ViewBag.Title = "Страница с автомобилями";
 
-            return View(carObj);
+            return View(watchObj);
         }
 
     }

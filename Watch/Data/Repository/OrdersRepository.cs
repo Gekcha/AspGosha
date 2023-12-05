@@ -26,9 +26,9 @@ namespace Shop.Data.Repository
             {
                 var orderDetail = new OrderDetail()
                 {
-                    CarId = el.car.id,
+                    WatchId = el.watch.id,
                     orderId = order.id,
-                    price = el.car.price
+                    price = el.watch.price
                 };
                 appDBContent.OrderDetail.Add(orderDetail);
             }

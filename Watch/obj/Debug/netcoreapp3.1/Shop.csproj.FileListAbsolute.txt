@@ -32,7 +32,6 @@ C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\staticwebassets\
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.TagHelpers.input.cache
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.TagHelpers.output.cache
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.RazorCoreGenerate.cache
-C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Cars\List.cshtml.g.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cache
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.RazorTargetAssemblyInfo.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Shop.Views.pdb
@@ -96,8 +95,9 @@ C:\Users\Admin\source\repos\Watch\Watch\bin\Debug\netcoreapp3.1\runtimes\win\lib
 C:\Users\Admin\source\repos\Watch\Watch\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Admin\source\repos\Watch\Watch\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\Admin\source\repos\Watch\Watch\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllCars.cshtml.g.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\ShopCart\Index.cshtml.g.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Order\Checkout.cshtml.g.cs
 C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Order\Complete.cshtml.g.cs
+C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AllWatches.cshtml.g.cs
+C:\Users\Admin\source\repos\Watch\Watch\obj\Debug\netcoreapp3.1\Razor\Views\Watches\List.cshtml.g.cs

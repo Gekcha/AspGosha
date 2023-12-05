@@ -31,8 +31,8 @@ namespace Shop
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
-            services.AddTransient<IAllCars, CarRepository>();
-            services.AddTransient<ICarsCategory, CategoryRepository>();
+            services.AddTransient<IAllWatches, WatchRepository>();
+            services.AddTransient<IWatchesCategory, CategoryRepository>();
             services.AddTransient<IAllOrders, OrdersRepository>();
 
 
@@ -55,7 +55,7 @@ namespace Shop
             app.UseMvc(routes =>
             {
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
-                routes.MapRoute(name: "categoryFilter", template: "Car/{action}/{category?}", defaults: new { Controller = "Car", action = "List" });
+                routes.MapRoute(name: "categoryFilter", template: "Watch/{action}/{category?}", defaults: new { Controller = "Car", action = "List" });
 
             });
 

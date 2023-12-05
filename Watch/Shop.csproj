@@ -18,6 +18,8 @@
     <Compile Include="Migrations\20231203104640_ShopCart.Designer.cs" />
     <Compile Include="Migrations\20231204082512_Orders.cs" />
     <Compile Include="Migrations\20231204082512_Orders.Designer.cs" />
+    <Compile Include="Migrations\20231205144420_preWatch.cs" />
+    <Compile Include="Migrations\20231205144420_preWatch.Designer.cs" />
     <Compile Include="Migrations\AppDBContentModelSnapshot.cs" />
   </ItemGroup>
 

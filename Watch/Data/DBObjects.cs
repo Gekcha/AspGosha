@@ -18,10 +18,10 @@ namespace Shop.Data
             if (!content.Category.Any())
                 content.Category.AddRange(Categories.Select(c => c.Value));
 
-            if (!content.Car.Any())
+            if (!content.Watch.Any())
             {
                 content.AddRange(
-                    new Car
+                    new Watch
                     {
                         name = "Tesla Model S",
                         shortDesc = "Быстрый автомобиль",
@@ -32,7 +32,7 @@ namespace Shop.Data
                         available = true,
                         Category = Categories["Электромобили"]
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Ford Fiesta",
                         shortDesc = "Тихий и спокойный",
@@ -43,7 +43,7 @@ namespace Shop.Data
                         available = true,
                         Category = Categories["Классические автомобили"]
                     },
-                    new Car
+                    new Watch
                     {
                         name = "BMW M3",
                         shortDesc = "Дерзкий и стильный",
@@ -54,7 +54,7 @@ namespace Shop.Data
                         available = true,
                         Category = Categories["Классические автомобили"]
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Mercedes C class",
                         shortDesc = "Уютный и большой",
@@ -65,7 +65,7 @@ namespace Shop.Data
                         available = false,
                         Category = Categories["Классические автомобили"]
                     },
-                    new Car
+                    new Watch
                     {
                         name = "Nissan Leaf",
                         shortDesc = "Бешумный и комфортный",

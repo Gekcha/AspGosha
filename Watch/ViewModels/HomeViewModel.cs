@@ -6,7 +6,7 @@ namespace Shop.ViewModels
     public class HomeViewModel
     {
 
-        public IEnumerable<Car> favCars { get; set; }
+        public IEnumerable<Watch> favWatches { get; set; }
 
     }
 }

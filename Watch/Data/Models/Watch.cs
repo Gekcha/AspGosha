@@ -1,6 +1,6 @@
 ﻿namespace Shop.Data.Models
 {
-    public class Car
+    public class Watch
     {
         public int id { get; set; }
 

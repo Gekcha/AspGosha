@@ -2,9 +2,9 @@
         <h3>@Model.currCategory</h3>
 <div class="row mt-5 mb-2">
     @{
-        foreach (Car car in Model.allCars)
+        foreach (Watch watch in Model.allWatches)
         {
-            @Html.Partial("AllCars", car);
+            @Html.Partial("AllWatches", watch);
         }
     }
 

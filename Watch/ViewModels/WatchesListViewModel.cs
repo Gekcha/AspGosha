@@ -4,10 +4,10 @@ using System.Collections.Generic;
 
 namespace Shop.ViewModels
 {
-    public class CarsListViewModel
+    public class WatchesListViewModel
     {
 
-        public IEnumerable<Car> allCars { get; set;}
+        public IEnumerable<Watch> allWatches { get; set;}
 
         public string currCategory { get; set;}
 

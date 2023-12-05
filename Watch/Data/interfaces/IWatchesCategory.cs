@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Shop.Data.interfaces
 {
-    public interface ICarsCategory
+    public interface IWatchesCategory
     {
         IEnumerable<Category> AllCategories { get; }
 

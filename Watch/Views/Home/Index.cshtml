@@ -3,10 +3,9 @@
 <h1>Лучшие автомобили</h1>
 <div class="row mt-5 mb-2">
     @{
-        foreach (Car car in Model.favCars)
+        foreach (Watch watch in Model.favWatches)
         {
-            @Html.Partial("AllCars", car)
-            ;
+            @Html.Partial("AllWatches", watch);
         }
     }
 
